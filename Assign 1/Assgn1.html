@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    
+  }
+          nav{
+              background-color:rgb(26, 43,59);
+              display: flex;
+              flex-direction: column;
+              height: 220px;
+              color: white;
+             
+          }
+          #c1{
+            display: flex;
+            flex: 1;
+            justify-content:space-between;
+            margin-top: 30px;
+            height: max-content;
+           }
+         #c11{
+          display: flex;
+          margin-left: 60px;
+         }
+         #c111{
+          display: flex;
+          flex-direction: column;
+          color: rgb(237,111,27);
+          margin-left: 10px;
+          
+         }
+         #c1111{
+          display: flex;
+          flex-direction: row;
+          margin-top: 2px;
+          justify-content: flex-end
+         }
+        #c1111 img{
+          background-color: white;
+          margin-right: 10px;
+          border-radius: 50%;
+          height: 40px;
+          width: 40px;
+          cursor: pointer;
+        }
+        
+        #c1111 img:hover{
+          
+           background-color: rgb(237,111,27);
+        }
+        #c2{
+          display: flex;
+          flex-direction: row;
+           text-align: start;
+           cursor: pointer;
+           padding: 20px 0px;
+           margin-left: 70px;
+           
+          
+         }
+        #c2 span{
+          font-weight: 30px;
+          font-size: larger;
+          margin-right: 20px;
+          font-size: larger;
+        }
+  
+        #c2 span:nth-child(2n-1):hover{
+          color:rgb(176,99,30);
+        }
+  
+        #c2 button{
+          background-color:rgb(237,111,27);
+          border-radius: 15px;
+          height: 30px;
+          width: 130px;
+          border: 0.5px solid;
+          color: white;
+          font-weight: 20px;
+          cursor: pointer;
+          
+        }
+        #c3{
+          background-color: rgb(237,111,27);
+          display: flex;
+          justify-content: space-evenly;
+          padding: 10px 0px;
+          width: 100%;
+          font-weight: 20px;
+          cursor: pointer;
+        }
+        #c31{
+          color: black;
+        }
+        #c3 span:hover:nth-child(2n){
+          color: black;
+        }
+        #c3 span:hover:nth-child(2n+1){
+          color: black;
+        }
+        #c4{
+          display: flex;
+         flex: 1;
+         flex-direction: row;
+        
+        margin: 40px 50px 20px 50px;
+        }
+        #c41{
+          display: flex;
+          flex: 2;
+          background-image: url("./photo.webp");
+          width: 100%;
+          background-size: cover;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        #c41 span{
+          background-color: rgb(237,111,27);
+          color: #ffff;
+          padding: 10px;
+          height: max-content;
+          width: max-content;
+          font-size: larger;
+          font-weight: bold;
+        }
+        #c411{
+          margin-top: 400px;
+          background-color: #00000050;
+          width: 100%;
+        }
+        #c411 p{
+          color: #ffffff;
+          margin: 0px;
+          font-weight: bolder;
+          font-size: x-large;
+          margin-left: 10px;
+          margin-bottom: 10px;
+        }
+        #c411 span{
+          color: rgb(237,111,27);
+          background-color: transparent;
+          font-weight: 500;
+        }
+        #c412{
+          display: flex;
+          
+        }
+        #c42{
+          width: 100%;
+          flex:1;
+          font-size: larger;
+          font-weight: bolder;
+          margin-left: 10px;
+        }
+        #c421{
+          display: flex;
+          background-color:rgb(26, 43,59) ;
+       
+        }
+        #c421 span{
+          display: flex;
+          padding: 20px 10px;
+          font-size: x-large;
+          text-align: center;
+          align-items: center;
+          color: #ffff;
+          
+        }
+        #c4211{
+          display: flex;
+          margin-bottom: 10px;
+          margin-top: 30px;
+          margin-left: 20px;
+        }
+        #c421111{
+          display: flex;
+          margin-left: 10px;
+          color: black;
+        }
+        
+     
+        #c4212{
+          display: flex;
+          margin-bottom: 10px;
+          justify-content: center;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        #c421211{
+        
+          margin-left: 10px;
+          margin-top: 0px;
+          color: black;
+        }
+        
+        #c4213{
+          display: flex;
+          margin-bottom: 10px;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        #c421311{
+          display: flex;
+          margin-left: 10px;
+          color: black;
+        
+        }
+
+      @media screen and (max-width:1000px){
+        #c1{
+          display: flex;
+        flex-direction:column;
+        align-items:center;
+        }
+        #c2{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+        #c3{
+          font-weight: 10px;
+        }
+        #c4{
+          display: flex;
+          flex-direction: column;
+        }
+        #c41{
+        height: 60%;
+        width: 100%;
+        }
+        #c42{
+          height: 60%;
+        width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        #c421{
+          margin-top: 20px;
+          justify-content: center;
+          align-items: center;
+        }
+        #c4211{
+          display: flex;
+        }
+        
+        #c421111 span {
+          margin-left: 20px;
+          font-weight: bold;
+          font-size: x-large;
+        }
+        #c4212{
+         display: flex;
+         justify-content: flex-start
+        }
+        
+        #c421211 span {
+          margin-left: 20px;
+          font-weight: bold;
+          font-size: x-large; 
+        }
+        #c4213{
+          display: flex;
+        }
+        #c421311 span{
+          margin-left: 20px;
+          font-weight: bold;
+          font-size: x-large;
+         
+        }
+    }
+    </style>
+    <title>Document</title>
+  
+</head>
+
+<body>
+    <nav>
+        <div id="c1">
+            <div id="c11">
+                <img src="CJ_logo1.svg" alt="" height="40px">
+                <div id="c111"><span>For photographer</span>
+                    <span>By photographer</span>
+                </div>
+            </div>
+            <div id="c1111">
+                <img src="search-alt-2-svgrepo-com.svg" alt="" width="10%">
+                <img src="twitter-154-svgrepo-com.svg" alt="" width="10%">
+                <img src="facebook-svgrepo-com.svg" alt="" width="10%">
+                <img src="instagram-svgrepo-com.svg" alt="" width="10%">
+                <img src="youtube-play-svgrepo-com.svg" alt="" width="10%">
+            </div>
+        </div>
+
+
+        <div id="c2">
+            <span>Home</span>
+            <span>|</span>
+            <span>News</span>
+            <span>|</span>
+            <span>BuyersGuides</span>
+            <span>|</span>
+            <span>Reviews</span>
+            <span>|</span>
+            <span>Tutorials</span>
+            <button>CJPOTY</button>
+        </div>
+        <div id="c3">
+            <span id="c31">TRENDING</span>
+            <span>BEST ND FILTER</span>
+            <span>NAPS-C LENSES</span>
+            <span>4K CAMERA@ 120FPS</span>
+            <span>CAMERA W/HIGHEST FPS</span>
+            <span>WHICH SONY A7?</span>
+
+        </div>
+    </nav>
+    <section>
+        <div id="c4">
+            <div id="c41">
+                <span>REVIEW</span>
+                <div id="c411">
+                    <p>ZHIYUP Crane 4</p>
+                    <span>16 Oct Friday</span>
+                </div>
+            </div>
+            <div id="c42">
+                <div id="c421"><span>BUYER'S GUIDES</span></div>
+                <div id="c4211">
+                    <div id="c42111"><img src="Sony-A7IV_DSC3036_©ANicholson-1410x793.jpg" alt="" width="220px"
+                            height="130px"></div>
+                    <div id="c421111"><span>Which Sony A7 camera? How to choose the right model</span></div>
+                </div>
+                <hr>
+                <div id="c4212">
+                    <div id="c42121"><img src="Nikon_Z7II_Review_DSC8597-226x127.webp" alt="" width="220px"
+                            height="130px"></div>
+                    <div id="c421211"><span>Best cameras for astrophotography</span></div>
+
+                </div>
+                <hr>
+                <div id="c4213">
+                    <div id="c42131"><img src="Sony_ZV-1_DSC7248-450x253.webp" alt="" width="220px" height="130px">
+                    </div>
+                    <div id="c421311"><span>Best cameras for YouTube video shots</span></div>
+
+                </div>
+
+            </div>
+        </div>
+  </section>
+</body>
+
+</html>
